@@ -1,0 +1,657 @@
+Model {
+  Name			  "test"
+  Version		  4.00
+  Description		  "LMS adaptive noise cancellation\n"
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "d"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sun Jun 14 21:26:01 1998"
+  Creator		  "don"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "admin"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sat Jun 08 01:55:11 2002"
+  ModelVersionFormat	  "1.%<AutoIncrement:87>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "999999"
+  SolverMode		  "SingleTasking"
+  Solver		  "FixedStepDiscrete"
+  RelTol		  "1e-3"
+  AbsTol		  "1e-6"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  off
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  off
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "none"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "test"
+    Location		    [7, 186, 743, 603]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    212
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      " "
+      Ports		      []
+      Position		      [666, 292, 720, 327]
+      BackgroundColor	      "cyan"
+      DropShadow	      on
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskDisplay	      "disp('Info')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			" "
+	Location		[116, 388, 596, 607]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Annotation {
+	  Position		  [179, 86]
+	  FontName		  "MS Sans Serif"
+	}
+	Annotation {
+	  Position		  [235, 110]
+	  Text			  "Adaptive Noise Cancellation using the Least"
+"\nMean Square Algorithm\n\nThe LMS adaptive filter uses the reference signal "
+"(on\nthe \"In\" port) and the error signal (on the \"Err\" port) to automatic"
+"ally\n match the filter response in the block labeled \"Noise filter\".\n As "
+"it converges to the correct filter, the filtered noise should\n be completely"
+" subtracted from the \"Signal + Noise\" signal and \nthe \"Error Signal\" sho"
+"uld contain only the original signal. \n\nFor details, see \"Adaptive Filter "
+"Theory\", 3rd Ed. by\nS. Haykin, Prentice-Hall 1996. "
+	  FontName		  "Arial"
+	  FontSize		  14
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Filter\nTaps"
+      Ports		      [1]
+      Position		      [580, 190, 615, 240]
+      SourceBlock	      "dspsnks3/Vector\nScope"
+      SourceType	      "Vector Scope"
+      ScopeProperties	      on
+      Domain		      "User-defined"
+      HorizSpan		      "1"
+      DisplayProperties	      off
+      AxisGrid		      on
+      Memory		      off
+      FrameNumber	      on
+      AxisLegend	      off
+      AxisZoom		      on
+      OpenScopeAtSimStart     on
+      OpenScopeImmediately    off
+      FigPos		      "[66 155 329 270]"
+      AxisProperties	      off
+      XUnits		      "Hertz"
+      XRange		      "[0...Fs/2]"
+      InheritXIncr	      on
+      XIncr		      "1"
+      XLabel		      "Samples"
+      YUnits		      "dB"
+      YMin		      "-0.2"
+      YMax		      "0.6"
+      YLabel		      "Filter Coefficients"
+      LineProperties	      off
+      LineDisables	      "on"
+      LineStyles	      ":"
+      LineMarkers	      "."
+      LineColors	      "[0 0 1]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Flip"
+      Ports		      [1, 1]
+      Position		      [515, 201, 550, 229]
+      SourceBlock	      "dspindex/Flip"
+      SourceType	      "Flip"
+      dim		      "Columns"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Frame Status\nConversion"
+      Ports		      [1, 1]
+      Position		      [65, 259, 115, 291]
+      SourceBlock	      "dspsigattribs/Frame Status\nConversion"
+      SourceType	      "Frame Status Conversion"
+      growRefPort	      off
+      outframe		      "Sample-based"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Frame Status\nConversion1"
+      Ports		      [1, 1]
+      Position		      [300, 259, 350, 291]
+      SourceBlock	      "dspsigattribs/Frame Status\nConversion"
+      SourceType	      "Frame Status Conversion"
+      growRefPort	      off
+      outframe		      "Frame-based"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Freq\nResponse"
+      Ports		      [1]
+      Position		      [515, 250, 550, 300]
+      SourceBlock	      "dspsnks3/Spectrum\nScope"
+      SourceType	      "Spectrum Scope"
+      ScopeProperties	      on
+      Domain		      "Frequency"
+      HorizSpan		      "1"
+      UseBuffer		      off
+      BufferSize	      "128"
+      Overlap		      "64"
+      inpFftLenInherit	      on
+      FFTlength		      "256"
+      numAvg		      "2"
+      DisplayProperties	      off
+      AxisGrid		      on
+      Memory		      off
+      FrameNumber	      off
+      AxisLegend	      off
+      AxisZoom		      on
+      OpenScopeAtSimStart     on
+      OpenScopeImmediately    off
+      FigPos		      "[404 155 378 270]"
+      AxisProperties	      off
+      XUnits		      "Hertz"
+      XRange		      "[0...Fs/2]"
+      InheritXIncr	      on
+      XIncr		      "1"
+      XLabel		      "Samples"
+      YUnits		      "dB"
+      YMin		      "-60"
+      YMax		      "0"
+      YLabel		      "Magnitude, dB"
+      LineProperties	      off
+      LineDisables	      "on"
+      LineStyles	      "-"
+      LineColors	      "[0 0 1]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "From Wave\nDevice"
+      Ports		      [0, 1]
+      Position		      [15, 119, 65, 171]
+      FontSize		      10
+      SourceBlock	      "dspsrcs3/From Wave\nDevice"
+      SourceType	      "From Wave Device"
+      SampleRate	      "8000"
+      UserRate		      "16000"
+      SampleWidth	      "8"
+      Stereo		      off
+      SamplesPerFrame	      "64"
+      QueueDuration	      "2"
+      useDefaultDevice	      on
+      userDeviceID	      "1"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain"
+      Position		      [250, 260, 280, 290]
+      Gain		      "-1"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "LMS\nAdaptive Filter"
+      Ports		      [2, 2]
+      Position		      [395, 171, 480, 229]
+      SourceBlock	      "dspadpt3/LMS\nAdaptive Filter"
+      SourceType	      "LMS Adaptive Filter"
+      n			      "32"
+      mu		      "0.5"
+      ic		      "0.0"
+      leakage		      "1.0"
+      normalized	      on
+      Adapt		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Noise"
+      Ports		      [0, 1]
+      Position		      [85, 26, 120, 64]
+      Diagnostics	      "AllowInheritedTsInSrc"
+      SourceBlock	      "dspsrcs3/Random\nSource"
+      SourceType	      "Random Source"
+      SrcType		      "Gaussian"
+      Min		      "0"
+      Max		      "1"
+      Mean		      "0"
+      Var		      "1"
+      RepMode		      "Specify seed"
+      Seed		      "[23341]"
+      Inherit		      off
+      SampMode		      "Discrete"
+      SampTime		      "1"
+      SampFrame		      "1"
+      OutComplex	      "Real"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Noise Filter"
+      Ports		      [1, 1]
+      Position		      [410, 106, 465, 154]
+      SourceBlock	      "dspddes3/Digital FIR\nFilter Design"
+      SourceType	      "Digital FIR Filter Design"
+      filttype		      "Lowpass"
+      N			      "31"
+      Wlo		      "0.5"
+      Whi		      "0.6"
+      W0		      "[.2 .5 .8]"
+      g0		      "1"
+      W1		      "[0 .2 .3 .6 .8 1]"
+      gains		      "[1 .5 0 0 1 .5]"
+      wintype		      "Hamming"
+      Rs		      "10"
+      Kbeta		      "5"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Results"
+      Ports		      [3]
+      Position		      [670, 50, 700, 90]
+      Floating		      off
+      Location		      [594, 77, 971, 497]
+      Open		      off
+      NumInputPorts	      "3"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+	axes3			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+	axes2			""
+	axes3			""
+      }
+      Grid		      "on"
+      TimeRange		      "399999.6"
+      YMin		      "-2~-0.002166666666666664~-0.001"
+      YMax		      "2~-0.001833333333333326~0.001"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      Ports		      [2, 1]
+      Position		      [490, 120, 510, 140]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "++|"
+      SaturateOnIntegerOverflow	on
+      Port {
+	PortNumber		1
+	Name			"Signal + Noise"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum3"
+      Ports		      [2, 1]
+      Position		      [555, 120, 575, 140]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      SaturateOnIntegerOverflow	on
+      Port {
+	PortNumber		1
+	Name			"Error Signal"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Time\nScope"
+      Ports		      [2]
+      Position		      [140, 33, 175, 82]
+      FontSize		      10
+      Floating		      off
+      Location		      [69, 474, 393, 713]
+      Open		      off
+      NumInputPorts	      "2"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+	axes2			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "0.338693~-0.035"
+      YMax		      "0.374345~0.02"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData1"
+      DataFormat	      "Structure"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "To Wave\nDevice"
+      Ports		      [1]
+      Position		      [315, 109, 370, 161]
+      FontSize		      10
+      SourceBlock	      "dspsnks3/To Wave\nDevice"
+      SourceType	      "To Wave Device"
+      bufDuration	      "2"
+      initDelay		      "0.1"
+      useDefaultDevice	      on
+      userDeviceID	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Unbuffer"
+      Ports		      [1, 1]
+      Position		      [165, 251, 215, 299]
+      FontSize		      10
+      SourceBlock	      "dspbuff3/Unbuffer"
+      SourceType	      "Unbuffer"
+      ic		      "1"
+    }
+    Line {
+      Name		      "Input Signal"
+      Labels		      [0, 0]
+      Points		      [395, 55; 105, 0]
+      Branch {
+	DstBlock		"Sum2"
+	DstPort			1
+      }
+      Branch {
+	Labels			[1, 0]
+	DstBlock		"Results"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Noise Filter"
+      SrcPort		      1
+      DstBlock		      "Sum2"
+      DstPort		      2
+    }
+    Line {
+      Name		      "Signal + Noise"
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      Points		      [0, 0; 15, 0]
+      Branch {
+	Labels			[2, 1]
+	Points			[0, -60]
+	DstBlock		"Results"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"Sum3"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "LMS\nAdaptive Filter"
+      SrcPort		      1
+      Points		      [80, 0]
+      DstBlock		      "Sum3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "LMS\nAdaptive Filter"
+      SrcPort		      2
+      Points		      [0, 0; 5, 0]
+      Branch {
+	Points			[0, 60]
+	DstBlock		"Freq\nResponse"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Flip"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "Error Signal"
+      Labels		      [0, 1]
+      SrcBlock		      "Sum3"
+      SrcPort		      1
+      Points		      [0, 0; 65, 0]
+      Branch {
+	Points			[0, -45]
+	DstBlock		"Results"
+	DstPort			3
+      }
+      Branch {
+	Points			[0, 200; -265, 0]
+	DstBlock		"LMS\nAdaptive Filter"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Flip"
+      SrcPort		      1
+      DstBlock		      "Filter\nTaps"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Noise"
+      SrcPort		      1
+      DstBlock		      "Time\nScope"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From Wave\nDevice"
+      SrcPort		      1
+      Points		      [65, 0; 0, 70; -110, 0; 0, 60]
+      DstBlock		      "Frame Status\nConversion"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Frame Status\nConversion"
+      SrcPort		      1
+      DstBlock		      "Unbuffer"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Unbuffer"
+      SrcPort		      1
+      DstBlock		      "Gain"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      DstBlock		      "Frame Status\nConversion1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Frame Status\nConversion1"
+      SrcPort		      1
+      Points		      [0, -85; -105, 0; 0, -55]
+      DstBlock		      "To Wave\nDevice"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [267, 12]
+      Text		      "Adaptive Noise Cancellation Demo"
+      FontName		      "Arial"
+      FontSize		      12
+      FontWeight	      "bold"
+    }
+  }
+}
