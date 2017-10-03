@@ -1,3 +1,28 @@
+Voice based Biometric Security System
+
+AIM: Develop a Biometric Security System, which used the human voice as a distinguishing feature between various users.
+
+Software / System Involved:
+
+MATLAB v6.1 and GUI development tool.
+Pentium III 866 Mhz, 256 MB RAM running Windows XP.
+Stereo Sound Card.
+Headphones.
+Standard Microphone.
+
+Achievements and preliminary Conclusions
+
+During our preliminary test runs, we loaded up our database with samples from eight students. We recorded some of the samples at different time of the day, to minimize any biases. 
+A typical test run with eight students indicate the following 
+
+1)	The system is able to recognize five out of eight students without any major discrepancies.
+2)	A specific user could neither be recognized nor verified at all, 
+3)	Another user was being confused with a particular user and vice versa.
+4)	This system is marginally faster than systems based on clustering mechanisms.
+
+Conclusions
+1)	The system is decently robust, but with the use of good quality microphone and some additional features such as pitch, power spectral density, etc we can improve the robustness where discrepancies arise.
+
 
 %-- 5/15/05 12:36 PM --%
 match
